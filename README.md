@@ -1,21 +1,51 @@
--- Criando ambiente virtual
+# Projeto Django
+
+## 🚀 Configuração do Ambiente
+
+### 1. Criando ambiente virtual
+```bash
 python3.14 -m venv venv
+```
 
--- Ative o ambiente virtual:
+### 2. Ative o ambiente virtual
+```bash
 source venv/bin/activate
+```
 
--- instalando as dependências
+### 3. Instalando as dependências
+```bash
 pip install -r requirements.txt
+```
 
--- congelar as depêndencias
+### 4. Congelar as dependências (após instalar novos pacotes)
+```bash
 pip freeze > requirements.txt
+```
 
--- Rodar o projeto
-python manage.py runserver
+## 🐘 Banco de Dados (Docker)
 
--- Rodando o docker
--- docker vai virtualizar o banco de dados
+### Iniciando o PostgreSQL
+O Docker vai virtualizar o banco de dados:
+```bash
 docker-compose up
+```
 
--- para parar o docker
+### Parando o Docker
+```bash
 docker-compose down
+```
+
+## ▶️ Rodando o Projeto
+
+### Iniciar o servidor de desenvolvimento
+```bash
+python manage.py runserver
+```
+
+---
+
+## 📝 Observações
+
+- Certifique-se de ter o Docker instalado para rodar o banco de dados
+- O servidor estará disponível em `http://127.0.0.1:8000/`
+- Sempre ative o ambiente virtual antes de trabalhar no projeto
