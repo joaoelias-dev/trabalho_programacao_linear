@@ -1,0 +1,11 @@
+-- Ative o ambiente virtual:
+source venv/bin/activate
+
+-- congelar as depêndencias
+pip freeze > requirements.txt
+
+-- rodar o projeto
+cd projeto_pl
+
+python manage.py runserver
+

@@ -1,0 +1,23 @@
+# Ambiente virtual
+venv/
+.env
+*.pyc
+__pycache__/
+db.sqlite3
+
+# Configurações locais
+*.log
+*.pot
+*.py[cod]
+*.swp
+
+# Pastas de build e cache
+build/
+dist/
+*.egg-info/
+
+# VS Code
+.vscode/
+
+# Arquivos do sistema
+.DS_Store
