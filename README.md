@@ -22,6 +22,20 @@ pip install -r requirements.txt
 pip freeze > requirements.txt
 ```
 
+## Coletando arquivos estáticos
+
+```bash
+python manage.py collectstatic
+```
+
+## Rodando as migrations
+
+```bash
+python manage.py makemigrations
+
+python manage.py migrate
+```
+
 ## 🐘 Banco de Dados (Docker)
 
 ### Iniciando o PostgreSQL
