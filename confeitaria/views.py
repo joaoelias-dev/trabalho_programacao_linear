@@ -36,10 +36,9 @@ class Resultado_VariavelViewSet(viewsets.ModelViewSet):
     serializer_class = Resultado_VariavelSerializer
 
 class Problema_CompletoViewSet(generics.ListAPIView):
-    pass
-    #def get_queryset(self):
-    #    return Problema.objects.filter(problema_id=self.kwargs['pk'])
-    #serializer_class = Problema_CompletoSerializer
+    def get_queryset(self):
+       return Problema.objects.filter(id=self.kwargs['pk'])
+    serializer_class = Problema_CompletoSerializer
 
 class CalcularSimplex(viewsets.ModelViewSet):
     """

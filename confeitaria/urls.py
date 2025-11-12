@@ -16,5 +16,5 @@ router.register('resultados-variaveis', Resultado_VariavelViewSet)
 urlpatterns = [
     path('', include(router.urls)),
     path('calcular-simplex/<int:pk>/', CalcularSimplex.as_view({'get':'resolver'})),
-    #path('problemas/<int:pk>/completo', Problema_CompletoViewSet.as_view({})),
+    path('problemas/<int:pk>/completo', Problema_CompletoViewSet.as_view()),
 ]
